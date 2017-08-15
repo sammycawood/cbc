@@ -5,5 +5,5 @@
         <p><i class="material-icons">phone</i> 517-XXX-XXXX</p>
         <p><i class="material-icons">email</i> email@example.com</p>
     </div>
-    <p>Hey Sam</p>
+    <p>Hey Sam, you're cool!</p>
 </footer>
