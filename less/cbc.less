@@ -1,0 +1,345 @@
+// main:styles.less
+
+* {
+    padding: 0;
+    margin: 0;
+
+    &:focus {
+        background: none;
+        outline: 0;
+    }
+}
+
+a {
+    color: @text;
+    text-decoration: none;
+}
+
+footer {
+    align-content: center;
+    align-items: flex-start;
+    background: @secondary;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 3em 0;
+
+    .material-icons {
+        font-size: 1em;
+        vertical-align: middle;
+    }
+}
+
+h1 {
+    font-size: 2em;
+}
+
+header {
+    height: 5em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 10000;
+}
+
+html {
+  color: @text;
+  font-family: Georgia, serif;
+  font-size: 16px;
+}
+
+img {
+    display: block;
+}
+
+p {
+  color: @text;
+}
+
+section {
+    padding: 2em 0;
+    text-align: center;
+
+    h2 {
+        color: @primary;
+        font-size: 2.5em;
+        line-height: 1em;
+        padding-bottom: 0.5em;
+    }
+}
+
+ul {
+  list-style: none;
+}
+
+.arrow {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    .transition(0.5s ease);
+    width: 5em;
+}
+
+.button {
+    background: @primary;
+    height: 3em;
+    line-height: 3em;
+    text-align: center;
+    .transition(0.5s ease);
+    width: 10em;
+
+    &:focus {
+        background: @secondary;
+    }
+
+    &:hover {
+        background: @secondary;
+    }
+
+    p {
+        color: @white;
+    }
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 62.5em;
+}
+
+.divider {
+    background-color: @secondary;
+    height: 0.75em;
+}
+
+.flexWrap {
+    align-content: center;
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.img-shadow-effect
+{
+    position:relative;
+    .box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset);
+
+    &:before, &:after {
+        content:"";
+        position:absolute;
+        z-index:-1;
+        .box-shadow(0 0 20px rgba(0,0,0,0.8));
+        top:0;
+        bottom:0;
+        left:10px;
+        right:10px;
+        .border-radius(100px / 10px);
+    }
+
+    &:after {
+        right:10px;
+        left:auto;
+        .transform(skew(8deg) rotate(3deg));
+    }
+}
+
+.largeText {
+    font-size: 1.5em;
+}
+
+.left {
+    float: left;
+}
+
+.main {
+    min-height: 30em;
+}
+
+.no-select {
+    .select(none);
+}
+
+.right {
+    float: right;
+}
+
+.title {
+    color: @primary;
+    font-size: 3em;
+    padding: 1em 0;
+}
+
+.view {
+  min-width: 300px;
+}
+
+#leftArrow {
+    background-image: url("graphics/CBCleftWhite.svg");
+    height: 3em;
+    width: 3em;
+
+    &:focus {
+        background-image: url("graphics/CBCleftBlue.svg");
+    }
+
+    &:hover {
+        background-image: url("graphics/CBCleftBlue.svg");
+    }
+}
+
+#mainNav {
+    background-color: @gray-light;
+    .box-shadow( 0 2px 8px @text);
+    height: 5em;
+    min-width: 250px;
+    opacity: 0.95;
+    text-align: center;
+    width: 100%;
+
+    a {
+        color: @primary;
+    }
+
+    ul {
+        display: inline-block;
+        height: 5em;
+        margin-right: 2em;
+
+        @media screen and (max-width: 850px) {
+            & {
+            display: none;
+            }
+        }
+
+        li {
+            color: @primary;
+            display: inline-block;
+            line-height: 5em;
+            margin: 0 0.7em;
+            .transition(0.5s ease);
+
+            &:focus {
+                color: @secondary;
+            }
+
+            &:hover {
+              color: @secondary;
+            }
+
+            &.active {
+                color: @secondary;
+            }
+        }
+    }
+
+    .logo {
+      color: @white;
+      display: inline-block;
+      line-height: 2.5em;
+      margin: 0 1em;
+      vertical-align: middle;
+
+      img {
+          height: 2.25em;
+          padding: 0.2em 0;
+          .transition(0.5s ease);
+      }
+
+      @media screen and (max-width: 350px) {
+          & img {
+              height: 1.5em;
+              padding: 0.5em 0;
+          }
+      }
+    }
+
+    .mobileIconContainer {
+        display: inline-block;
+        line-height: 5em;
+        margin-right: 2em;
+        text-align: right;
+
+        &:focus {
+            a {
+              color: @secondary;
+            }
+        }
+
+        &:hover {
+            a {
+              color: @secondary;
+            }
+        }
+
+        a {
+            font-size: 1.5em;
+            .transition(0.5s ease);
+        }
+    }
+}
+
+#mobileIcon {
+    display: none;
+
+    @media screen and (max-width: 850px) {
+        & {
+          display: block;
+        }
+    }
+}
+
+#mobileNav {
+  background: @primary-trans;
+  display: none;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5000;
+}
+
+#mobileNavContainer {
+    background: @secondary;
+    display: none;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    width: 80vw;
+
+    li {
+        color: @white;
+        margin-right: 2em;
+        padding: 1em 0;
+        .transition(0.5s ease);
+
+        &:focus {
+            color: @primary;
+        }
+
+        &:hover {
+            color: @primary;
+        }
+    }
+
+    ul {
+      margin-top: 6em;
+    }
+}
+
+#rightArrow {
+    background-image: url("graphics/CBCrightWhite.svg");
+    height: 3em;
+    width: 3em;
+
+    &:focus {
+        background-image: url("graphics/CBCrightBlue.svg");
+    }
+
+    &:hover {
+        background-image: url("graphics/CBCrightBlue.svg");
+    }
+}

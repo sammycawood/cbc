@@ -1,0 +1,41 @@
+// main:styles.less
+
+.properties-rentals {
+    .main {
+        padding: 5em 0 5em 0;
+        text-align: center;
+    }
+
+    .flexWrap {
+        margin: auto;
+        max-width: 66em;
+    }
+
+    .property {
+        background: @gray;
+        margin: 2em;
+        padding: 1em;
+        text-align: left;
+
+        h3 {
+            font-size: 2em;
+            padding-bottom: 0.5em;
+        }
+
+        .avail {
+            border-radius: 0.5em;
+            display: inline-block;
+            font-size: 1.25em;
+            margin-top: 1em;
+            padding: 0.25em;
+        }
+
+        .available p {
+            color: @green;
+        }
+
+        .unavailable p {
+            //color: @red;
+        }
+    }
+}

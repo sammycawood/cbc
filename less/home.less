@@ -1,0 +1,150 @@
+// main:styles.less
+
+.home {
+    .slider {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        a {
+            margin: auto;
+            z-index: 1000;
+        }
+
+        .arrow {
+            display: inline-block;
+            position: absolute;
+        }
+
+        .button {
+            z-index: 1000;
+        }
+
+        .cover {
+            display: flex;
+            height: inherit;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            top: 55%;
+            width: 100%;
+        }
+
+        .sliderImg {
+            overflow: hidden;
+            position: absolute;
+
+            img {
+                margin: auto;
+                width: 100%;
+            }
+        }
+
+        .sliderImgWrap {
+            width: 100%;
+        }
+
+        .sliderTitle {
+            color: @white;
+            padding-top: 5em;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+
+            h1 {
+                .transition(0.25s ease);
+            }
+        }
+
+        #leftArrow {
+            left: 0;
+            margin-left: 2%;
+        }
+
+        #rightArrow {
+            margin-right: 2%;
+            right: 0;
+        }
+
+        @media screen and (max-width: 803px) {
+            & {
+                padding-top: 5em;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            & {
+                .sliderTitle {
+                    h1 {
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
+
+    #buildingProcess {
+        min-height: 10em;
+
+        .content {
+            text-align: left;
+            padding: 0 10%;
+        }
+    }
+
+    #cbcNumbers {
+        background-color: @primary;
+
+        h2 {
+            color: @white;
+            font-size: 6em;
+            padding: 0.25em 1em 0.1em 1em;
+        }
+
+        h3 {
+            color: @white;
+            font-size: 1.5em;
+        }
+
+        p {
+            color: @white;
+        }
+
+        .stat {
+            display: inline-block;
+        }
+    }
+
+    #ourStory {
+        min-height: 10em;
+
+        .flexItem {
+            margin: 2em 2em 0 2em;
+        }
+
+        .image {
+            width: 33%;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        .text {
+            width: 50%;
+            text-align: left;
+        }
+
+        @media screen and (max-width: 803px) {
+            .image {
+                width: 80%;
+            }
+
+            .text {
+                width: 80%;
+            }
+        }
+    }
+}
