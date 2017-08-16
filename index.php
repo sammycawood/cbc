@@ -21,7 +21,7 @@
             <div class="cover">
                 <div class="arrow left" id="leftArrow"></div>
                 <div class="arrow right" id="rightArrow"></div>
-                <a href="gallery.html"><div class="button"><p>View Gallery</p></div></a>
+                <a href="gallery.php"><div class="button"><p>View Gallery</p></div></a>
             </div>
         </div>
         <div class="divider"></div>
