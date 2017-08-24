@@ -1,6 +1,21 @@
 // main:styles.less
 
 .home {
+    section {
+        p {
+            text-align: left;
+        }
+
+        .image {
+            width: 33%;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+
     .slider {
         align-items: center;
         display: flex;
@@ -87,9 +102,31 @@
     #buildingProcess {
         min-height: 10em;
 
+        h2 {
+            border-bottom: 1px solid @secondary;
+            margin-bottom: 0.75em;
+            padding-bottom: 0.25em;
+        }
+
+        p {
+            max-width: 40em;
+        }
+
         .content {
             text-align: left;
-            padding: 0 10%;
+        }
+
+        .image {
+            float: right;
+            margin: 0 0 1.5em 1.5em;
+        }
+
+        @media screen and (max-width: 803px) {
+            .image {
+                float: none;
+                margin: 0 auto 1.5em;
+                width: 80%;
+            }
         }
     }
 
@@ -108,6 +145,7 @@
         }
 
         p {
+            text-align: center;
             color: @white;
         }
 
@@ -119,30 +157,22 @@
     #ourStory {
         min-height: 10em;
 
-        .flexItem {
-            margin: 2em 2em 0 2em;
+        h2 {
+            border-bottom: 1px solid @secondary;
+            margin-bottom: 0.75em;
+            padding-bottom: 0.25em;
+            text-align: right;
         }
 
         .image {
-            width: 33%;
-
-            img {
-                height: auto;
-                width: 100%;
-            }
-        }
-
-        .text {
-            width: 50%;
-            text-align: left;
+            float: left;
+            margin: 0 1.5em 1.5em 0;
         }
 
         @media screen and (max-width: 803px) {
             .image {
-                width: 80%;
-            }
-
-            .text {
+                float: none;
+                margin: 0 auto 1.5em;
                 width: 80%;
             }
         }

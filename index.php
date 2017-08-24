@@ -26,19 +26,17 @@
         </div>
         <div class="divider"></div>
         <section id="ourStory">
-            <div class="content flexWrap">
-                <div class="image flexItem img-shadow-effect"><img src="images/EXAMPLE1.jpg" alt="pic1"></div>
-                <div class="text flexItem">
-                    <h2>Our Story</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenean ac tristique massa. Aliquam lacus urna, mattis vel
-                        urna vel, luctus dignissim enim. Nullam pulvinar efficitur
-                        tellus, nec posuere dolor. Nullam feugiat ante ac massa
-                        pretium fringilla. Orci varius natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus mus. Suspendisse
-                        potenti. Nam tempus suscipit faucibus. Pellentesque et ex
-                        quis velit efficitur placerat vehicula et turpis.</p>
-                </div>
+            <div class="content">
+                <h2>Our Story</h2>
+                <div class="image img-shadow-effect"><img src="images/EXAMPLE1.jpg" alt="pic1"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean ac tristique massa. Aliquam lacus urna, mattis vel
+                    urna vel, luctus dignissim enim. Nullam pulvinar efficitur
+                    tellus, nec posuere dolor. Nullam feugiat ante ac massa
+                    pretium fringilla. Orci varius natoque penatibus et magnis
+                    dis parturient montes, nascetur ridiculus mus. Suspendisse
+                    potenti. Nam tempus suscipit faucibus. Pellentesque et ex
+                    quis velit efficitur placerat vehicula et turpis.</p>
             </div>
         </section>
         <section id="cbcNumbers">
@@ -59,16 +57,17 @@
         <section id="buildingProcess">
             <div class="content">
                 <h2>Building Process</h2>
+                <div class="image img-shadow-effect"><img src="images/EXAMPLE1.jpg" alt="pic1"></div>
                 <p>Cawood Building Co. strives to create an enjoyable, hassle-free
                     journey for the vision of your home by paying close attention to
                      detail and providing boundless possibilities of customization
                      during the planning process. We want to incorporate your
-                     lifestyle needs into the design.</p><br>
-                 <p>Bill maintains a manageable workload to provide his clients with
+                     lifestyle needs into the design.<br><br>
+                 Bill maintains a manageable workload to provide his clients with
                      an intimate and fine-tuned experience, guaranteeing the personal touch. He
                      is on site consistently throughout the process, monitoring the project’s
-                     development until its completion.</p><br>
-                 <p>To create our homes, we use reputable subcontractors with
+                     development until its completion.<br><br>
+                 To create our homes, we use reputable subcontractors with
                      longstanding relationships to our company. Alongside this, we
                      use premium-level materials in all of our work, whether it’s a
                      remodel, an addition, or a new home build. We want to create
