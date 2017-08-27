@@ -7,7 +7,7 @@ $(document).ready(function() {
     var pics = $(".galImg");
 
     // Get the modal
-    var modal = $('#myModal');
+    var modal = $('#cbcModal');
 
     // Get the <span> element that closes the modal
     var close = $(".close").get(0);
@@ -15,11 +15,25 @@ $(document).ready(function() {
     // When the user clicks on the button, open the modal
     $(pics).click(function() {
         that.modalIndex = parseInt($(this)[0].id);
-        $($(modal).find("img").get(0)).attr("src", $(this).find("img")[0].src);
-        $(modal).css("display", "flex");
+
+        // Image slider
+        var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            loop: true,
+            initialSlide: that.modalIndex,
+
+            // If we need pagination
+            // pagination: '.swiper-pagination',
+
+            // Navigation arrows
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev'
+        });
+
+        $(modal).fadeIn();
     });
 
-    // When the user clicks on <span> (x), close the modal
+    // When the user clicks on 'x', close the modal
     $(close).click(function() {
         $(modal).fadeOut();
     });
@@ -48,6 +62,7 @@ $(document).ready(function() {
         updateModal(that.modalIndex);
     });
 
+    // Put in correct image into modal by index
     function updateModal(index) {
         $($(modal).find("img").get(0)).attr("src", $($(pics)[index]).find("img")[0].src);
     }
@@ -61,4 +76,29 @@ $(document).ready(function() {
             clearInterval(galInt);
         }
     }, 500);
+
+    // Modal fits window at any size, make sure it's not too big
+    function checkModalSize() {
+        // Ignore this function for small devices
+        if ($(window).width() < 768) {
+            return;
+        }
+
+        var winHeight = parseFloat($(window).height() - $('header').height()); // Exclude header
+        var winModWidth = parseFloat($(window).width());
+        var modHeight = parseFloat($('.modal-content').height());
+        var modWidth = parseFloat($('.modal-content').width());
+
+
+        /*
+        if () {
+            $('.modal-content').css('width', 'auto');
+            $('.modal-content').css('height', '');
+        } else {
+            $('.modal-content').css('width', '80%');
+            $('.modal-content').css('height', 'auto');
+        }
+        */
+    }
+    $(window).resize(checkModalSize);
 });

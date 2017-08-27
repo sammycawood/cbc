@@ -6,23 +6,30 @@
     include ('head.php');
     ?>
     <script src="js/home.js"></script>
+    <!-- Swiper from CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
 </head>
 <body>
 <div class="view home" id="top">
     <?php include ("nav.php"); ?>
     <div class="main">
-        <div class="slider">
-            <div class="sliderImgWrap">
-                <p class="sliderImg"><img src="images/File_009.jpg" alt="Slider 1"></p>
-                <p class="sliderImg"><img src="images/File_006.jpeg" alt="Slider 2"></p>
-                <p class="sliderImg"><img src="images/File_004.jpeg" alt="Slider 3"></p>
-                <p class="sliderImg"><img src="images/File_001.jpeg" alt="Slider 4"></p>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/File_009.jpg" alt="Slide 1"></div>
+                <div class="swiper-slide"><img src="images/File_006.jpeg" alt="Slide 2"></div>
+                <div class="swiper-slide"><img src="images/File_004.jpeg" alt="Slider 3"></div>
+                <div class="swiper-slide"><img src="images/File_001.jpeg" alt="Slider 4"></div>
             </div>
-            <div class="cover">
-                <div class="arrow left" id="leftArrow"></div>
-                <div class="arrow right" id="rightArrow"></div>
-                <a href="gallery.php"><div class="button"><p>View Gallery</p></div></a>
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <a href="gallery.php"><div class="button"><p>View Gallery</p></div></a>
         </div>
         <div class="divider"></div>
         <section id="ourStory">
@@ -76,6 +83,9 @@
         </section>
     </div>
     <?php include ("footer.php"); ?>
+
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
 </body>
 </html>

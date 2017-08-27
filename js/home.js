@@ -22,71 +22,22 @@ $(document).ready(function() {
     } // End if
   });
 
+
   // Image slider
-  $(window).on('resize', resizeSlider);
-  var theInterval;
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
+    autoHeight: true,
+    autoplay: 7000,
+    autoplayDisableOnInteraction: false,
+    loop: true,
+    paginationClickable: true,
 
-  function startSlide() {
-      theInterval = setInterval(sliderFwd, 7000);
-  }
 
-  function stopSlide() {
-      clearInterval(theInterval);
-  }
+    // If we need pagination
+    pagination: '.swiper-pagination',
 
-  $(function () {
-      startSlide();
-      $('.sliderImg').hover(function () {
-          stopSlide();
-      }, function () {
-          startSlide();
-      });
-  });
-
-  slideIndex = 1;
-  var slides = $(".sliderImg img");
-  slides.css("display", "none");
-  $(slides.get(slideIndex - 1)).css("display", "block");
-  setTimeout(resizeSlider, 200);
-  setTimeout(resizeSlider, 500);
-  setTimeout(sliderFwd, 7000); // Change image every 7 seconds
-
-  function resizeSlider() {
-      var maxHeight = Math.max.apply(null, $(".sliderImg").map(function () {
-          return $(this).height();
-      }).get());
-      $(".sliderImgWrap").css("height", maxHeight);
-  }
-
-  function sliderFwd() {
-      $(slides.get(slideIndex - 1)).fadeOut(750);
-      slideIndex ++;
-      if (slideIndex > slides.length) {
-          slideIndex = 1;
-      }
-      $(slides.get(slideIndex - 1)).fadeIn(750);
-      resizeSlider();
-  }
-
-  function sliderBck() {
-      $(slides.get(slideIndex - 1)).fadeOut(750);
-      slideIndex --;
-      if (slideIndex < 1) {
-          slideIndex = slides.length;
-      }
-      $(slides.get(slideIndex - 1)).fadeIn(750);
-      resizeSlider();
-  }
-
-  $("#leftArrow").click(function() {
-      stopSlide();
-      sliderBck();
-      startSlide();
-  });
-
-  $("#rightArrow").click(function() {
-      stopSlide();
-      sliderFwd();
-      startSlide();
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev'
   });
 });
