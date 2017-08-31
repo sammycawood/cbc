@@ -1,0 +1,44 @@
+// main:styles.less
+
+footer {
+    background: @secondary;
+
+    .flexWrap {
+        align-content: flex-start;
+        justify-content: space-evenly;
+        padding: 3em 0;
+
+        & > * {
+            margin-bottom: 0.5em;
+        }
+    }
+
+    .material-icons {
+        font-size: 1em;
+        vertical-align: middle;
+    }
+
+    .mwsCredit {
+        background-color: @gray;
+        padding: 0.5em;
+        text-align: center;
+
+        &.flexWrap {
+            align-content: center;
+            align-items: baseline;
+            justify-content: center;
+
+            & > * {
+                margin-bottom: 0;
+            }
+        }
+
+        p {
+            color: @primary;
+        }
+
+        .smallText {
+            color: @text;
+        }
+    }
+}
