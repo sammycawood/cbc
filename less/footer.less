@@ -1,15 +1,33 @@
 // main:styles.less
 
 footer {
-    background: @secondary;
+    background: @primary;
+
+    a, h2, h3, p {
+        color: @gray;
+    }
+
+    h3 {
+        border-bottom: 1px solid @secondary;
+        color: @gray-er;
+        font-size: 1.5em;
+        margin-bottom: 0.25em;
+        padding-bottom: 0.25em;
+    }
+
+    p {
+        margin-bottom: 0.25em;
+    }
 
     .flexWrap {
         align-content: flex-start;
-        justify-content: space-evenly;
-        padding: 3em 0;
+        justify-content: center;
+        padding: 2em 5% 0;
 
         & > * {
-            margin-bottom: 0.5em;
+            margin: 0 1em 2em;
+            width: 33%;
+            .transition(0.5s ease);
         }
     }
 
@@ -19,7 +37,6 @@ footer {
     }
 
     .mwsCredit {
-        background-color: @gray;
         padding: 0.5em;
         text-align: center;
 
@@ -34,11 +51,27 @@ footer {
         }
 
         p {
-            color: @primary;
+            color: @white;
         }
 
         .smallText {
-            color: @text;
+            color: @gray-er;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .flexWrap {
+            & > * {
+                width: 40%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .flexWrap {
+            & > * {
+                width: 100%;
+            }
         }
     }
 }
