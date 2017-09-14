@@ -57,7 +57,6 @@
                     <h2>4</h2>
                     <p class="largeText">Generations</p>
                 </div>
-
             </div>
         </section>
         <div class="divider"></div>
