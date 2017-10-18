@@ -13,37 +13,39 @@
 <div class="view home" id="top">
     <?php include ("nav.php"); ?>
     <div class="main">
-        <!-- Slider main container -->
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="images/File_009.jpg" alt="Slide 1"></div>
-                <div class="swiper-slide"><img src="images/File_006.jpeg" alt="Slide 2"></div>
-                <div class="swiper-slide"><img src="images/File_004.jpeg" alt="Slider 3"></div>
-                <div class="swiper-slide"><img src="images/File_001.jpeg" alt="Slider 4"></div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+        <div id="slider">
+            <div class="swiper">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="images/File_009.jpg" alt="Slide 1"></div>
+                        <div class="swiper-slide"><img src="images/File_006.jpeg" alt="Slide 2"></div>
+                        <div class="swiper-slide"><img src="images/File_004.jpeg" alt="Slider 3"></div>
+                        <div class="swiper-slide"><img src="images/File_001.jpeg" alt="Slider 4"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <a href="gallery.php"><div class="button"><p>View Gallery</p></div></a>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <a href="gallery.php"><div class="button"><p>View Gallery</p></div></a>
+                </div>
+            </div>
         </div>
         <div class="divider"></div>
         <section id="ourStory">
             <div class="content">
                 <h2>Our Story</h2>
                 <div class="image img-shadow-effect"><img src="images/EXAMPLE1.jpg" alt="pic1"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean ac tristique massa. Aliquam lacus urna, mattis vel
-                    urna vel, luctus dignissim enim. Nullam pulvinar efficitur
-                    tellus, nec posuere dolor. Nullam feugiat ante ac massa
-                    pretium fringilla. Orci varius natoque penatibus et magnis
-                    dis parturient montes, nascetur ridiculus mus. Suspendisse
-                    potenti. Nam tempus suscipit faucibus. Pellentesque et ex
-                    quis velit efficitur placerat vehicula et turpis.</p>
+                <p>Cawood Building Co was established in 1985 but its roots began many years earlier.
+Bill Cawood, President, is a fourth generation building following his father, grandfather
+and great-grandfather. After graduating from Michigan State University in Building Construction
+Management in 1984, he joined his brother and father in business building custom homes in the greater
+Lansing area. Bill continues to build custom homes and renovations today, incorporating the values
+instilled from his family: Honesty, Integrity and Quality</p>
             </div>
         </section>
         <section id="cbcNumbers">

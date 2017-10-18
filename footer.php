@@ -1,8 +1,11 @@
 <footer>
     <div class="flexWrap">
         <div>
-            <h3>Learn More</h3>
-            <a href="<?php echo $links[0] ?>"><p>Top</p></a>
+            <h3>Site Map</h3>
+            <a href="<?php echo $links[0] ?>"><p>Home</p></a>
+            <a href="<?php echo $links[1] ?>"><p>Our Story</p></a>
+            <a href="<?php echo $links[2] ?>"><p>Building Process</p></a>
+            <a href="<?php echo $links[3] ?>"><p>Gallery</p></a>
         </div>
         <div>
             <h3>Contact Us</h3>

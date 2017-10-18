@@ -14,11 +14,7 @@ $(document).ready(function() {
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top - 92
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
+      }, 800, function(){});
     } // End if
   });
 
@@ -26,7 +22,7 @@ $(document).ready(function() {
   // Image slider
   var mySwiper = new Swiper ('.swiper-container', {
     // Optional parameters
-    autoHeight: true,
+    autoHeight: false,
     autoplay: 7000,
     autoplayDisableOnInteraction: false,
     loop: true,

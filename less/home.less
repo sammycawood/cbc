@@ -16,9 +16,13 @@
         }
     }
 
+    .swiper {
+        margin: auto;
+        max-width: 64em;
+    }
+
     .swiper-container {
         width: 100%;
-        height: 67%;
 
         img {
             width: 100%;
@@ -27,7 +31,6 @@
 
         .button {
             position: absolute;
-
             left: 50%;
             margin-left: -5em;
             margin-top: -1.5em;
@@ -35,16 +38,8 @@
             z-index: 1000;
         }
 
-        @media screen and (max-width: 803px) {
-            & {
-                padding-top: 5em;
-            }
-
-            .button,
-            .swiper-button-next,
-            .swiper-button-prev {
-                top: calc(50% + 5em);
-            }
+        .swiper-slide {
+            margin-top: auto;
         }
     }
 
@@ -69,14 +64,6 @@
         .image {
             float: right;
             margin: 0 0 1.5em 1.5em;
-        }
-
-        @media screen and (max-width: 803px) {
-            .image {
-                float: none;
-                margin: 0 auto 1.5em;
-                width: 80%;
-            }
         }
     }
 
@@ -130,8 +117,32 @@
             float: left;
             margin: 0 1.5em 1.5em 0;
         }
+    }
 
-        @media screen and (max-width: 803px) {
+    #slider {
+        background: @gray-er;
+    }
+
+    @media screen and (max-width: 803px) {
+        .swiper-container {
+            padding-top: 5em;
+
+            .button,
+            .swiper-button-next,
+            .swiper-button-prev {
+                top: calc(50% + 5em);
+            }
+        }
+
+        #buildingProcess {
+            .image {
+                float: none;
+                margin: 0 auto 1.5em;
+                width: 80%;
+            }
+        }
+
+        #ourStory {
             .image {
                 float: none;
                 margin: 0 auto 1.5em;
