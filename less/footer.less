@@ -3,6 +3,10 @@
 footer {
     background: @primary;
 
+    a {
+        .transition(all ease 0.25s);
+    }
+
     a, h2, h3, p {
         color: @gray;
     }
@@ -17,6 +21,10 @@ footer {
 
     p {
         margin-bottom: 0.25em;
+
+        a:hover {
+            color: @secondary;
+        }
     }
 
     .flexWrap {

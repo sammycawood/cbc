@@ -69,6 +69,7 @@
                     "<div class='cover no-select'><p>View</p></div><img src='$pic' alt='Gallery ".($count + 1)."'></div>";
                     $count += 1;
                 }
+
                 echo $html;
             ?>
         </div>

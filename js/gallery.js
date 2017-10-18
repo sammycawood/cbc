@@ -16,7 +16,6 @@ $(document).ready(function() {
     $(pics).click(function() {
         that.modalIndex = parseInt($(this)[0].id);
         var ndx = that.modalIndex;
-        console.log(ndx);
         $(modal).fadeIn();
 
         // Image slider
@@ -52,6 +51,20 @@ $(document).ready(function() {
     });
 
     // Make pictures load every 0.5s
+    /*var index = 0;
+    var galInt = setInterval(function() {
+        $($(pics).get(index)).css("opacity", "1");
+        index++;
+        if (pics.length == index) {
+            clearInterval(galInt);
+        }
+    }, 250);*/
+});
+
+
+$(window).on('load', function() {
+    var pics = $(".galImg");
+    // Make pictures load every 0.5s
     var index = 0;
     var galInt = setInterval(function() {
         $($(pics).get(index)).css("opacity", "1");
@@ -59,5 +72,5 @@ $(document).ready(function() {
         if (pics.length == index) {
             clearInterval(galInt);
         }
-    }, 500);
+    }, 300);
 });
