@@ -50,15 +50,12 @@ $(document).ready(function() {
         }
     });
 
-    // Make pictures load every 0.5s
-    /*var index = 0;
-    var galInt = setInterval(function() {
-        $($(pics).get(index)).css("opacity", "1");
-        index++;
-        if (pics.length == index) {
-            clearInterval(galInt);
-        }
-    }, 250);*/
+    $(window).resize(function() {
+        // For mobile switching from portrait to landscape
+        var modalHeight = $(".swiper-container").css("height");
+        var windowHeight = $(window).height();
+        console.log(windowHeight);
+    })
 });
 
 
