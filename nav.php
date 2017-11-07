@@ -17,7 +17,7 @@
             <a href="<?php echo $links[2]; ?>"><li>Building Process</li></a>
             <a href="<?php echo $links[3]; ?>"><li <?php if ($page_title == 'Gallery') echo "class='active'"; ?>>Gallery</li></a>
         </ul>
-        <p class="mobileIconContainer right"><a href="javascript:void(0);" id="mobileIcon">&#9776;</a></p>
+        <p class="mobileIconContainer right"><a href="javascript:void(0);" id="mobileIcon"><i class="material-icons">menu</i></a></p>
     </nav>
 </header>
 <nav class="nav" id="mobileNav">

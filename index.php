@@ -31,16 +31,10 @@
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                    <a href="gallery.php"><div class="button"><p>View Gallery</p></div></a>
                 </div>
             </div>
         </div>
         <div class="divider"></div>
-        <!--section id="overview">
-            <div class="content">
-                <p>Quality custom built homes for the greater Lansing area. </p>
-            </div>
-        </section>-->
         <section id="ourStory">
             <div class="content">
                 <h2>Our Story</h2>
@@ -70,7 +64,7 @@ instilled from his family: Honesty, Integrity and Quality</p>
         <section id="buildingProcess">
             <div class="content">
                 <h2>Building Process</h2>
-                <div class="image img-shadow-effect"><img src="images/EXAMPLE1.jpg" alt="pic1"></div>
+                <div class="image img-shadow-effect"><img src="images/foundation.jpg" alt="Cawood Building Co Foundation"></div>
                 <p>Cawood Building Co. strives to create an enjoyable, hassle-free
                     journey for the vision of your home by paying close attention to
                      detail and providing boundless possibilities of customization

@@ -14,6 +14,6 @@
         </div>
     </div>
     <div class="mwsCredit">
-        <p class="smallText"><span>Design &amp; Development by</span> Marble Web Solutions LLC</p>
+        <p class="smallText"><span>Design &amp; Development by</span> <a href="http://marblewebsolutions.com" target="_blank">Marble Web Solutions LLC</a></p>
     </div>
 </footer>

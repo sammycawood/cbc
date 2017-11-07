@@ -35,7 +35,7 @@ $(document).ready(function() {
             prevButton: '.swiper-button-prev'
         });
 
-
+        landscape();
     });
 
     // When the user clicks on 'x', close the modal
@@ -50,14 +50,18 @@ $(document).ready(function() {
         }
     });
 
-    $(window).resize(function() {
-        // For mobile switching from portrait to landscape
-        var modalHeight = $(".swiper-container").css("height");
-        var windowHeight = $(window).height();
-        console.log(windowHeight);
-    })
+    $(window).on('resize', landscape);
 });
 
+function landscape () {
+    // For mobile switching from portrait to landscape
+    var modalHeight = parseInt($(".swiper-container").css("height")) + parseInt($(".modal").css("padding-top"));
+    var modalWidth = parseInt($(".swiper-container").css("width"));
+    var windowHeight = parseInt($(window).height());
+    if (modalHeight > windowHeight) {
+
+    }
+}
 
 $(window).on('load', function() {
     var pics = $(".galImg");

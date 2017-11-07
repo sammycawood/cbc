@@ -21,6 +21,7 @@ footer {
 
     p {
         margin-bottom: 0.25em;
+        font-size: 1em;
 
         a:hover {
             color: @secondary;
@@ -34,8 +35,8 @@ footer {
 
         & > * {
             margin: 0 1em 2em;
-            width: 33%;
-            .transition(0.5s ease);
+            max-width: 20em;
+            width: 40%;
         }
     }
 
@@ -71,15 +72,7 @@ footer {
         }
     }
 
-    @media screen and (max-width: 800px) {
-        .flexWrap {
-            & > * {
-                width: 40%;
-            }
-        }
-    }
-
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 570px) {
         .flexWrap {
             & > * {
                 width: 100%;
