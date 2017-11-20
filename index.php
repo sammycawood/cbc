@@ -20,10 +20,10 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide"><img src="images/File_009.jpg" alt="Slide 1"></div>
-                        <div class="swiper-slide"><img src="images/File_006.jpeg" alt="Slide 2"></div>
-                        <div class="swiper-slide"><img src="images/File_004.jpeg" alt="Slider 3"></div>
-                        <div class="swiper-slide"><img src="images/File_001.jpeg" alt="Slider 4"></div>
+                        <div class="swiper-slide"><img src="images/File_009.jpg" alt="Slide 1"><p>Honesty.</p></div>
+                        <div class="swiper-slide"><img src="images/File_006.jpeg" alt="Slide 2"><p>Integrity.</p></div>
+                        <div class="swiper-slide"><img src="images/File_004.jpeg" alt="Slider 3"><p>Quality.</p></div>
+                        <div class="swiper-slide"><img src="images/File_001.jpeg" alt="Slider 4"><p>Traditional.</p></div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -40,9 +40,9 @@
                 <h2>Our Story</h2>
                 <div class="image img-shadow-effect"><img src="images/bill_cawood.JPG" alt="Bill Cawood"></div>
                 <p>Cawood Building Co was established in 1985 but its roots began many years earlier.
-Bill Cawood, President, is a fourth generation building following his father, grandfather
+Bill Cawood, President, is a fourth generation builder following his father, grandfather
 and great-grandfather. After graduating from Michigan State University in Building Construction
-Management in 1984, he joined his brother and father in business building custom homes in the greater
+Management in 1984, he joined his brother and father in business, building custom homes in the greater
 Lansing area. Bill continues to build custom homes and renovations today, incorporating the values
 instilled from his family: Honesty, Integrity and Quality</p>
             </div>
@@ -51,7 +51,7 @@ instilled from his family: Honesty, Integrity and Quality</p>
             <div>
                 <p class="largeText">Proudly serving the Greater Lansing Community</p>
                 <div class="stat">
-                    <h2 id="companyYears">96</h2>
+                    <h2 id="companyYears">100+</h2>
                     <p class="largeText">Years</p>
                 </div>
                 <div class="stat">

@@ -1,4 +1,5 @@
 .ftpconfig
+.gitignore
 less-autocompile-1.0.0
 less
 properties-rentals.php

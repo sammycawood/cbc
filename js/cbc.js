@@ -13,6 +13,13 @@ $(document).ready(function() {
         }
     });*/
 
+    // Mobile menu click anywhere except mobile menu to exit
+    $('#mobileNav').on('click', function(e) {
+        if (e.target.id != "mobileNavContainer") {
+            toggleMobileMenu();
+        }
+    });
+
     // When transitioning from small to large width, if menu is still open, close menu
     $(window).on('resize', navWindowResize);
 

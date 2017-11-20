@@ -1,0 +1,10 @@
+.ftpconfig
+.ftpignore
+id_rsa
+.DS_Store
+.git
+properties-rentals.php
+.gitignore
+js/properties-rentals.js
+less
+less/*

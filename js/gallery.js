@@ -34,8 +34,6 @@ $(document).ready(function() {
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev'
         });
-
-        landscape();
     });
 
     // When the user clicks on 'x', close the modal
@@ -50,17 +48,25 @@ $(document).ready(function() {
         }
     });
 
-    $(window).on('resize', landscape);
+    $(window).on('resize', sizeSwiper);
 });
 
-function landscape () {
-    // For mobile switching from portrait to landscape
-    var modalHeight = parseInt($(".swiper-container").css("height")) + parseInt($(".modal").css("padding-top"));
-    var modalWidth = parseInt($(".swiper-container").css("width"));
-    var windowHeight = parseInt($(window).height());
-    if (modalHeight > windowHeight) {
 
+
+function sizeSwiper () {
+    console.log("HI");
+    // For mobile switching from portrait to landscape
+    var windowHeight = parseInt($(window).height());
+    var windowWidth = parseInt($(window).width());
+    var topPadding = parseInt($(".modal").css("padding-top"));
+    if (windowHeight > windowWidth) {
+        // Width is min side
+        $(".swiper-container").css("width", "100%");
+    } else {
+        // Height is min side
+        $(".swiper-container").css("width", (windowHeight - (topPadding * 2)) * 3 / 2);
     }
+
 }
 
 $(window).on('load', function() {

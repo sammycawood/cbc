@@ -3,7 +3,7 @@
 /* The Close Button */
 .close {
     position: absolute;
-    top: 0.67em;
+    top: 0;
     right: 0.67em;
     color: @white;
     font-size: 3em;
@@ -29,12 +29,16 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: @black; /* Fallback color */
     background-color: @black-trans;
-    padding-top: 6em;
+    padding-top: 4em;
     z-index: 5000;
 
     .swiper-container {
-        width: 80%;
-        max-width: 45em;
+        width: 45em;
+        max-width: 100%;
+
+        .swiper-slide {
+            width: 100%;
+        }
 
         img {
             width: 100%;

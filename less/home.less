@@ -64,6 +64,17 @@
 
         .swiper-slide {
             margin-top: auto;
+
+            p {
+                border-bottom: 4px solid @secondary;
+                bottom: 1.3em;
+                color: @white;
+                font-size: 2.5em;
+                font-weight: bold;
+                left: 1.5em;
+                padding-bottom: 0.2em;
+                position: absolute;
+            }
         }
     }
 
@@ -103,7 +114,7 @@
         h2 {
             color: @white;
             font-size: 6em;
-            padding: 0.25em 1em 0.1em 1em;
+            padding: 0.25em 0 0.1em;
         }
 
         h3 {
@@ -112,12 +123,15 @@
         }
 
         p {
-            text-align: center;
             color: @white;
+            text-align: center;
+            margin: auto;
+            max-width: 90%;
         }
 
         .stat {
             display: inline-block;
+            margin: 0 3em;
         }
     }
 
@@ -168,6 +182,23 @@
                 float: none;
                 margin: 0 auto 1.5em;
                 width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 760px) {
+        .swiper-slide {
+            p {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        #cbcNumbers {
+            .stat {
+                width: 100%;
+                margin: 0;
             }
         }
     }

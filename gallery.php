@@ -23,7 +23,6 @@
         "images/File_007.jpeg",
         "images/File_011.jpg",
         "images/File_009.jpg",
-        "images/File_010.jpg"
     ];
 ?>
 
